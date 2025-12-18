@@ -22,11 +22,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m venv venv
+          ./venv/bin/pip install --upgrade pip
+          ./venv/bin/pip install -r requirements.txt
 
       - name: Run Data Sync
-        run: python data_sync.py
+        run: ./venv/bin/python data_sync.py
 
       - name: Commit and Push Changes
         run: |
