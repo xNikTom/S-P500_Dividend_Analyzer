@@ -1,0 +1,1 @@
+This is a simple tool created with Google Antigravity. It lists all S&P500 stocks which have dividend yield of more than 4%. Than after some simple weighting analysis based on value and dividend investing, creates score to rank the companies. 
